@@ -54,3 +54,29 @@
 
 `http://toolingibk.site/`
 ![Accessing-our-web-server-using-newly-registered-domain](./Images/Accessing-our-web-server-using-newly-registered-domain.png)
+
+### Securing our Domain
+
+### Installing Certbot and its dependencies
+`sudo apt install certbot -y`
+
+`sudo apt install python3-certbot-nginx -y`
+![Installing-certbot-and-its-dependencies](./Images/Installing-certbot-and-its-dependencies.png)
+
+### Creating a certificate for our Domain to make it secure
+`sudo certbot --nginx -d toolingibk.site -d www.toolingibk.site`
+
+![creating-certificate-to-secure-our-domain](./Images/creating-certificate-to-secure-our-domain.png)
+
+![creating-certificate-to-secure-our-domain-Continued](./Images/creating-certificate-to-secure-our-domain-contd.png)
+
+### Domain is secured 
+
+![Domain-is-secure](./Images/Domain-is-secure.png)
+
+### Creating a Crontab Job to automatically or periodically renew our certificate
+`crontab -e`
+
+![Crontab-job-to-periodically-renew-cert](./Images/Crontab-job-to-periodically-renew-cert.png)
+
+![Crontab-job-to-auto-renew-certificate](./Images/Crontab-job-to-auto-renew-certificate.png)
