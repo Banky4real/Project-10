@@ -55,7 +55,7 @@
 `http://toolingibk.site/`
 ![Accessing-our-web-server-using-newly-registered-domain](./Images/Accessing-our-web-server-using-newly-registered-domain.png)
 
-### Securing our Domain
+## Securing our Domain
 
 ### Installing Certbot and its dependencies
 `sudo apt install certbot -y`
